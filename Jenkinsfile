@@ -5,7 +5,7 @@ node{
     }
     
     stage('build & test & package'){
-        sh 'mvn clean install package'
+        sh 'mvn clean package'
     }
     
     stage('deploy'){

@@ -24,7 +24,7 @@
       state: started
       enabled: true
   - name: deploy addressbook application
-    command: sudo docker run -it -d -p 8888:8080 mayukh656/new-nginx:v1.0
+    command: docker run -it -d -p 8888:8080 mayukh656/new-nginx:v1.0
   handlers:
   - name: run update
     apt:
